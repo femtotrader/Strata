@@ -4,6 +4,15 @@
                           https://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
+      <id>oss-sonatype</id>
+      <username>${env.OSS_SONATYPE_USER}</username>
+      <password>${env.OSS_SONATYPE_PASSWORD}</password>
+    </server>
+    <server>
+      <id>github</id>
+      <passphrase>${env.GITHUB_TOKEN}</passphrase>
+    </server>
+    <server>
       <id>og-public-release</id>
       <username>${DEPLOY_USER}</username>
       <password>${DEPLOY_PASSWORD}</password>
